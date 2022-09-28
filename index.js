@@ -13,5 +13,5 @@ app.use(express.urlencoded({extended: false}))//Permitimos recibir datos de codi
 //Utilizamos las rutas
 app.use(router)
 
-
+//Levantamos el servidor de express
 app.listen(port, () => console.log(`Escuchando en el puerto ${port}!`))

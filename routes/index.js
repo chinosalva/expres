@@ -1,9 +1,11 @@
 const { Router } = require('express')
 const router = Router()
+const { controllerget, controllerpost } = ('../controllers')
 
-router.get('/users', (req, res) => {
-    console.log(req.body)
-    res.json({message: 'Hola soy la respuesta'})
-})
+
+router.get('/products/:productid', controllerget)
+router.get('/products', controllerpost)
+
+
 
 module.exports = router
